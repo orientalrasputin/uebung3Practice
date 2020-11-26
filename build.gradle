@@ -23,12 +23,12 @@ spotbugsMain {
 pmd {
     consoleOutput = true
     toolVersion = "6.29.0"
+    sourceSets = [sourceSets.main]
     ruleSets = [
             "category/java/errorprone.xml",
             "category/java/bestpractices.xml",
             "category/java/codestyle.xml",
             "category/java/design.xml",
-            "category/java/documentation.xml",
             "category/java/multithreading.xml",
             "category/java/performance.xml",
             "category/java/security.xml"
