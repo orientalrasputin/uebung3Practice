@@ -21,6 +21,7 @@ jobs:
     - uses: mstachniuk/ci-skip@v1
       with:
          fail-fast: true
+         commit-filter: '[ci-skip]'
     - name: Verification
       run: |
            echo "The previous step should exiting with 42 code and this code should not run"
