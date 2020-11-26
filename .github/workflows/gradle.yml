@@ -38,9 +38,6 @@ jobs:
     - name: gradle test
       run: ./gradlew test
 
-    - name: gradle check
-      run: ./gradlew check
-
 
 
   gradle_check:
