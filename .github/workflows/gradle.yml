@@ -54,5 +54,12 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
+
     - name: gradle check
       run: ./gradlew check
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: reports
+        path: build/reports/
